@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>我的第一张网页</h2>
+<p>我的第一个段落。</p>
+<button  onClick=go(1)>测试按钮</button>
+<button  onClick=go(2)>测试按钮</button>
+<table>
+<tr>
+	<td onClick="go(1);">我的第一个段落。</td>
+	<td onClick="go(2);">我的第一个段落。</td>
+</tr>
+</table>
+
+<script>
+
+
+//这段注释是为了验证第二次提交的实验
+
+var issubmit = false;
+
+
+function go(i) {
+	if(issubmit){
+		alert("请求已提交，请等待！");
+		return;
+	}
+
+	issubmit=true;
+	if (i==1) {
+		setTimeout(function(){window.parent.location.href="www.qq.com"; }, 3000);
+	}else{
+		setTimeout(function(){window.parent.location.href="www.baidu.com"; }, 3000);
+	}
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
