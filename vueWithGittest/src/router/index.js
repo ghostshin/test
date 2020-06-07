@@ -24,7 +24,8 @@ export default new Router({
   routes: [{
       path: '/',
       redirect: '/home'
-    }, {
+    },
+    {
       path: '/home',
       component: Home
     },
@@ -39,5 +40,6 @@ export default new Router({
 
   ],
   //将模式变成 history 使url看着更舒服
-  mode: 'history'
+  mode: 'history',
+  base: '/xushen/',
 })
