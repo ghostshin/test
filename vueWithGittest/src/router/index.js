@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../components/Home.vue'
 import About from '../components/About.vue'
+import User from '../components/User.vue'
 /**
  * 重写路由的push方法
  */
@@ -30,6 +31,10 @@ export default new Router({
     {
       path: '/about',
       component: About
+    },
+    {
+      path:'/user/:userId',
+      component:User
     }
 
   ],
